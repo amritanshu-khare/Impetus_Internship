@@ -1,0 +1,29 @@
+﻿ML Project Life Cycle
+1. Requirement Gathering
+2. Exploratory data analysis
+3. Feature Engineering
+4. Feature Solution
+5. Model creation
+6. Model Hyperparameter
+7. Model Deployment
+8. Retraining Approaches
+
+
+These things are setup using pipelines, CI+CD (continuous integration + continuous developement) pipelines, especially for model hyperparameter tuning. ML models degrade overtime. This may be due to new data being captured. Hence, developing a retraining approach is necessary.
+Devops is a combination of CI+CD and deployment but in MLops, we have retraining approach pipeline as well.
+
+
+MLOps
+Combination of ML system developement and tools. It aims to uniffy the process of developing and operating ML systems. It emphasizes the automation and monitoring of the ML system throughout its development cycle.
+  
+
+Only a small fraction of a real world ML system comprises of te ML code, rest of the elements are also important and complex.
+
+
+How MLOps helps in a project
+There are following stages in a ML project -
+1. Design - This means understanding the problem and understanding if ML is the right solution for that problem. 
+2. Train - This refers to the development and training of the ML model. Hyperparameter tuning is one of the step in this. To keep a track of these changes and to compare how different models perform. Various technologies like MLflow are used. 
+To make it easy to run and train the model, a pipeline can be developed. Common tools for this purpose are Kuberflow pipelines. 
+3. Operate - This deals with model deployment and monitoring. Model can be deployed either as a batch (if there is no need to process data immediately) or online (if the data requires immediate processing). In online, models can be deployed as a web service which requires libraries like Flask or FastAPI and runs on kubernetes. 
+In addition to deployment, monitoring is also essential to make sure that everything is functioning properly.
